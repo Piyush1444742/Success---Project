@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ln-left{
+    font-size: 24px;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #1877f2;
+}
+
+.navbar input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+    /*background: url(images/banner.jpg) center/cover;*/
+    background-color: #5584c1;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero h1 span {
+    color: #a3d3ff;
+}
+
+.hero-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+}
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.menu {
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.menu li {
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu li.active {
+    background: #e7f3ff;
+    font-weight: bold;
+}
+
+.connect-box {
+    background: #e7f3ff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.connect-box button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #1877f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* FEED */
+.feed {
+    flex: 1;
+}
+
+.create-post {
+    background: white;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.create-post img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.create-post input {
+    flex: 1;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.create-post button {
+    padding: 10px 15px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* POST */
+.post {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.post-header img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.post-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.post-images img {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background: #1c2b4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* LINKEDIN NAVBAR */
+.ln-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.ln-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ln-logo {
+    width: 35px;
+}
+
+.ln-search {
+    display: flex;
+    align-items: center;
+    background: #eef3f8;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.ln-search i {
+    color: gray;
+    margin-right: 6px;
+}
+
+.ln-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 250px;
+}
+
+/* CENTER MENU */
+.ln-center {
+    display: flex;
+    gap: 30px;
+}
+
+.ln-item {
+    text-align: center;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+}
+
+.ln-item i {
+    font-size: 18px;
+}
+
+.ln-item span {
+    display: block;
+    font-size: 12px;
+}
+
+.ln-item.active {
+    color: black;
+}
+
+.ln-item.active::after {
+    content: "";
+    height: 2px;
+    background: black;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* NOTIFICATION BADGE */
+.notification .badge {
+    position: absolute;
+    top: -5px;
+    right: 8px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+/* RIGHT */
+.ln-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.ln-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
